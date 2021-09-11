@@ -15,7 +15,6 @@ provider:
         - "dynamodb:PutItem"
         - "dynamodb:UpdateItem"
         - "dynamodb:DeleteItem"
-        - "dynamodb:ListStreams"
       Resource:
         - "arn:aws:dynamodb:${self:provider.region}:*:table/${file(config.json):DYNAMODB_TABLE}"
 

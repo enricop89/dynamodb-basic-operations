@@ -52,7 +52,7 @@ const updateItem = async (itemId, paramsName, paramsValue) => {
     };
   
     const result = await dynamoDb.update(params).promise()
-      return result.Attributes;
+    return result.Attributes;
   };
 
   module.exports = {
